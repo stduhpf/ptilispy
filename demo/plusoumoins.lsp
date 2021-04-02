@@ -30,7 +30,7 @@
 		)
 	)
 	;on peut inclure les variables et fonctions venant d'autres fichiers
-	(load file "demo/include.lsp" rec)
+	(load file rec "demo/include.lsp")
 	(defun main (args)
 		(retlast
 			(define attempts 0)

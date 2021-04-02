@@ -1,6 +1,6 @@
 (noret
 	;on peut inclure les variables et fonctions venant d'autres fichiers
-	(load file "demo/include.lsp" inc)
+	(load file inc "demo/include.lsp")
 	(defun main (args)
 		(retlast
             (print args)

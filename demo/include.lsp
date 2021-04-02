@@ -15,5 +15,5 @@
     )
     (defun fact (n)
         (if (<= n 1)(retfirst 1)(* n (fact (- n 1))))
-    )    
+    )  
 )

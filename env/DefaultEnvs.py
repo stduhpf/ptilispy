@@ -397,11 +397,11 @@ def _loadEnv(code: list, env: Scope):
         elif name == 'file':
             if a != 4 and a != 3:
                 raise argumentException('load file', '2 or 3', a-1)
-            if e['_plispyEnvs'].get(code[2]) == None:
-                e['_plispyEnvs'][code[2]] = newEnv
-                evaluate(parseFile(code[1]), newEnv)
+            if e['_plispyEnvs'].get(code[1]) == None:
+                e['_plispyEnvs'][code[1]] = newEnv
+                evaluate(parseFile(code[2]), newEnv)
             else:
-                raise redefinitionException(code[2])
+                raise redefinitionException(code[1])
             if a == 3:
                 return Symbol('t')
             truecode = code[3]
