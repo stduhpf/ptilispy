@@ -73,9 +73,6 @@ def run(program: list, args: list = [list], env: Scope = default_environement())
             return mainfun.execute(args, env)
     return ret
 
-################################################################
-### -----------------------  Tests  ------------------------ ###
-
 
 if __name__ == "__main__":
     REPL()
