@@ -349,7 +349,7 @@ def _try(args: list, env: Scope):
 # chargement d'environement de variables
 
 
-# to be callsed from Python
+# to be called from Python
 def loadEnv(name: Symbol, env: Scope = None, a: list = []) -> Scope:
     e = env.searchVarScope('_plispyEnvs')
     constructor = e['_plispyEnvs'][name]

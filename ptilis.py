@@ -78,11 +78,4 @@ def run(program: list, args: list = [list], env: Scope = default_environement())
 
 
 if __name__ == "__main__":
-    a = parseAndRunFile("demo/syracuse.lsp", [27], repl=False)
-    print("execution terminée avec valeur " + str(a))
-    a = parseAndRunFile("demo/plusoumoins.lsp", repl=False,
-                        env=default_environement())
-    print("execution terminée avec valeur " + str(a))
-    a = parseAndRunFile("demo/tests.lsp", repl=False,
-                        env=default_environement())
-    print("execution terminée avec valeur " + str(a))
+    REPL()
