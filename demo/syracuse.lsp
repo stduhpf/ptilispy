@@ -1,6 +1,6 @@
 (noret
 	;on peut inclure les variables et fonctions venant d'autres fichiers
-	(load file inc "demo/include.lsp")
+	(load file incl "demo/include.lsp")
 	(defun main (args)
 		(retlast
             (print args)
@@ -8,7 +8,7 @@
             (try
                 (retlast
                     (define n (intcast(elem args 0)))
-			        (load inc (syracuse n))
+			        (load incl (syracuse n))
                 )(
                     print "no arguments"
                 )

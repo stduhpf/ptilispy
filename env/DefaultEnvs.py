@@ -128,13 +128,13 @@ def _if(args: list, env: Scope):
     if a == 3:
         (con, the, els) = args
         res = the if evaluate(con, env) else els
-        value = evaluate(res, env)
+        value = evaluate(res, Scope(env))
         return value
     elif a == 2:
         (con, the) = args
         if evaluate(con, env):
             res = the
-            value = evaluate(res, env)
+            value = evaluate(res, Scope(env))
             return value
         else:
             return Symbol('nil')
